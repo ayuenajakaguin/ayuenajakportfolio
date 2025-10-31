@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayuen Ajak Photography</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="home" class="hero-section">
+    <nav class="navbar">
+      <div class="brand">Ayuen Ajak Photography</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Ayuen Ajak Photography</h1>
+      <p class="tagline">Capturing moments that tell stories</p>
+      <a class="btn" href="#portfolio">View Portfolio</a>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+
+  <main>
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="bio">I’m Ayuen Ajak, a passionate photographer based in Nairobi, Kenya. With a keen eye for light, emotion and storytelling, I capture authentic moments that reflect the beauty of everyday life, people and places. Whether it’s portraits, events or creative shoots, I believe every image has a story. Welcome to my world through the lens.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <h2>Gallery</h2>
+
+        <div class="slideshow">
+          <div class="slides">
+            <div class="slide active"><img src="images/0_image_0_watermark_Thu_23102025_085625.jpg" alt="Photo 1"></div>
+            <div class="slide"><img src="images/0_image_0_watermark_Thu_23102025_214505.jpg" alt="Photo 2"></div>
+            <div class="slide"><img src="images/1761196271702.jpg" alt="Photo 3"></div>
+          </div>
+
+          <button class="prev" aria-label="Previous slide">‹</button>
+          <button class="next" aria-label="Next slide">›</button>
+
+          <div class="dots" aria-hidden="false">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:ayuenajakaguin00@gmail.com">ayuenajakaguin00@gmail.com</a></p>
+
+        <form id="contactForm" action="https://formspree.io/forms" method="POST">
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ayuen Ajak Photography</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
